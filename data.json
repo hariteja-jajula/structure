@@ -1,0 +1,292 @@
+{
+  "User Type": {
+    "columns": ["USER_ID"],
+    "children": {
+      "IT Staff": {
+        "columns": ["IT_STAFF_SPECIFIC_COLUMN"],
+        "children": {
+          "MPIIO Jobs": {
+            "columns": ["TOTAL_MPIIO_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_MPIIO_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_MPIIO_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_MPIIO_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_MPIIO_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          },
+          "POSIX Jobs": {
+            "columns": ["TOTAL_POSIX_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_POSIX_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_POSIX_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_POSIX_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_POSIX_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          },
+          "STDIO Jobs": {
+            "columns": ["TOTAL_STDIO_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_STDIO_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_STDIO_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_STDIO_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_STDIO_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "Researcher": {
+        "columns": ["RESEARCHER_SPECIFIC_COLUMN"],
+        "children": {
+          "MPIIO Jobs": {
+            "columns": ["TOTAL_MPIIO_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_MPIIO_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_MPIIO_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_MPIIO_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_MPIIO_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          },
+          "POSIX Jobs": {
+            "columns": ["TOTAL_POSIX_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_POSIX_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_POSIX_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_POSIX_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_POSIX_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          },
+          "STDIO Jobs": {
+            "columns": ["TOTAL_STDIO_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_STDIO_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_STDIO_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_STDIO_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_STDIO_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          }
+        }
+      },
+      "Student": {
+        "columns": ["STUDENT_SPECIFIC_COLUMN"],
+        "children": {
+          "MPIIO Jobs": {
+            "columns": ["TOTAL_MPIIO_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_MPIIO_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_MPIIO_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_MPIIO_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_MPIIO_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          },
+          "POSIX Jobs": {
+            "columns": ["TOTAL_POSIX_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_POSIX_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_POSIX_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_POSIX_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_POSIX_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          },
+          "STDIO Jobs": {
+            "columns": ["TOTAL_STDIO_*"],
+            "children": {
+              "Mixed Operations": {
+                "columns": ["TOTAL_STDIO_MIXED_OPS"],
+                "children": {}
+              },
+              "Read Operations": {
+                "columns": ["TOTAL_STDIO_READ_OPS"],
+                "children": {
+                  "Detailed I/O Analysis": {
+                    "columns": ["TOTAL_STDIO_DETAILED_IO"],
+                    "children": {}
+                  },
+                  "Execution Context": {
+                    "columns": ["EXECUTION_CONTEXT"],
+                    "children": {}
+                  },
+                  "Performance Metrics": {
+                    "columns": ["PERFORMANCE_METRICS"],
+                    "children": {}
+                  }
+                }
+              },
+              "Write Operations": {
+                "columns": ["TOTAL_STDIO_WRITE_OPS"],
+                "children": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
