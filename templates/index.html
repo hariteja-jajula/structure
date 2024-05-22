@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darshan Dataset Analysis Guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="tree-container">
+        <div id="tree"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('/data')
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Data fetched:', data);
+                    const treeContainer = document.getElementById('tree');
+                    const tree = createTree(data, 1);
+                    console.log('Tree structure created:', tree);
+                    treeContainer.appendChild(tree);
+                    addCollapsibleListeners();
+                    console.log('Collapsible listeners added');
+                }).catch(error => console.error('Error fetching data:', error));
+
+            function createTree(data, level) {
+                const ul = document.createElement('ul');
+                ul.className = "nested active";
+                for (const key in data) {
+                    const li = document.createElement('li');
+                    const span = document.createElement('span');
+                    span.className = `caret level-${level}`;
+                    span.textContent = key;
+                    li.appendChild(span);
+                    
+                    if (data[key].columns) {
+                        const box = document.createElement('div');
+                        box.className = 'column-box';
+                        box.innerHTML = '<strong>Columns:</strong><br>' + data[key].columns.join('<br>');
+                        li.appendChild(box);
+                    }
+
+                    if (typeof data[key].children === 'object' && Object.keys(data[key].children).length > 0) {
+                        li.appendChild(createTree(data[key].children, level + 1));
+                    }
+                    ul.appendChild(li);
+                }
+                return ul;
+            }
+
+            function addCollapsibleListeners() {
+                var toggler = document.getElementsByClassName("caret");
+                for (var i = 0; i < toggler.length; i++) {
+                    toggler[i].addEventListener("click", function () {
+                        this.parentElement.querySelector(".nested").classList.toggle("active");
+                        this.classList.toggle("caret-down");
+                    });
+                }
+            }
+        });
+    </script>
+</body>
+</html>
